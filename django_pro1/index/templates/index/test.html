@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form action="/test" method="post">
+    An email has been sent to your email account
+    <p>
+        <input type="hidden" name="emailnow" value="{{email}}">
+      <input type="hidden" name="realcode" value="{{code}}">
+      Code: <input type="text" name="code">
+      <input type="submit" value="Proceed">
+    </p>
+  </form>
+</body>
+</html>

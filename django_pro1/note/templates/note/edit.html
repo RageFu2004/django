@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EditYourNotes</title>
+</head>
+<body>
+<form action="/note/edit" method="post">
+    <p>
+        <input type="hidden" name="id" value={{id}}>
+    </p>
+  <p>
+     Title:<input type="text" name="title" value="{{title}}" >
+  </p>
+  <p>
+      Content:<textarea  name="content" >{{content}}</textarea>
+  </p>
+
+  <p>
+    <input type="submit" value="OK!">
+  </p>
+</form>
+</body>
+</html>

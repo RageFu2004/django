@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome!</title>
+</head>
+<body>
+{%if request.session.username %}
+<p>
+    Welcome, {{request.session.username}}
+</p>
+<p>
+    <a href="/user/login?logout=1">Log out</a>
+</p>
+<p>
+    <a href="/note/present">Enter my notes</a>
+</p>
+    {%if email %}
+    <p> Your Email has been registered</p>
+    {% else %}
+    <p class="but">Your Email has not been registered
+        <button class="gg">Register</button>
+
+    </p>
+    {% endif %}
+{% else %}
+    {%if request.COOKIES.username %}
+    <p>
+        Welcome, {{request.COOKIES.username}}
+    </p>
+    <p>
+        <a href="/user/login?logout=1">Log out</a>
+    </p>
+    <p>
+        <a href="/note/present">Enter my notes</a>
+    </p>
+
+    {% else %}
+        <p>
+            <a href="/user/login">Login</a>
+        </p>
+        <p>
+            <a href="/user/reg">New here? Register</a>
+        </p>
+    {% endif %}
+
+{% endif %}
+
+<script>
+  var but = document.querySelector('.gg')
+  var button = document.querySelector('.but')
+  but.onclick = function(){
+    var reg = document.createElement("box");
+    reg.innerHTML = "<form action='/test' method='post'>E-mail:<input type='text' name='email'> <input type='submit' value='Proceed'></form>"
+    button.appendChild(reg);
+  }
+
+
+
+</script>
+</body>
+</html>
