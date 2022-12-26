@@ -1,2 +1,2 @@
-# Windows>Linux, for real
+# CSDN updated
 outline1：http://haoweifu.pythonanywhere.com/
