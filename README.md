@@ -1,4 +1,4 @@
 # CSDN updated
-outline1：http://haoweifu.pythonanywhere.com
-outline2: http://159.138.40.184:5000/index backend currently closed for server's low performance reason :) 
+#outline1：http://haoweifu.pythonanywhere.com
+#outline2: http://159.138.40.184:5000/index backend currently closed for server's low performance reason :) 
 Django-fublog only backend's source code open
