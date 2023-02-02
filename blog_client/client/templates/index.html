@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>DavisBlog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/bitbug_favicon.ico" type="image/x-icon" />
+  <link href="static/css/base.css" rel="stylesheet">
+  <link href="static/css/index.css" rel="stylesheet">
+  <link href="static/css/m.css" rel="stylesheet">
+  <script src="static/js/jquery.min.js" type="text/javascript"></script>
+  <script src="static/js/jquery.easyfader.min.js"></script>
+  <script src="static/js/scrollReveal.js"></script>
+  <script src="static/js/common.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <!--menu begin-->
+    <div class="menu">
+      <nav class="nav" id="topnav">
+        <h1 class="logo"><a href="/index">DavisBlog</a></h1>
+        <li><a href="/index">Main Site</a> </li>
+        <li><a href="/login" id="change3">My Blog List</a>
+          <ul class="sub-nav">
+            <li><a href="/login" id="change4">Academic</a></li>
+            <li><a href="/login" id="change5">Non-Academic</a></li>
+
+          </ul>
+        </li>
+        <li><a href="/visitor/topics">Public Blogs</a>
+        </li>
+        <li><a href="/login" id="change2">About Me</a> </li>
+        <li><a href="/login" id="change">Write a blog</a></li>
+          <li><a href="https://www.ucdavis.edu/">UC Davis</a> </li>
+      </nav>
+    </div>
+    <a href="/login" id="login" target="_blank">Login</a>
+    <a href="/register" id="register" target="_blank">Register</a>
+    <!--menu end-->
+    <!--mnav begin-->
+    <div id="mnav">
+      <h2><a href="index.html" class="mlogo">DavisBlog</a><span class="navicon"></span></h2>
+      <dl class="list_dl">
+        <dt class="list_dt"> <a href="/index">Main Site</a> </dt>
+        <dt class="list_dt"> <a href="#">Blog List</a> </dt>
+        <dd class="list_dd">
+        </dd>
+        <dt class="list_dt"> <a href="photo.html">My Photos</a> </dt>
+        <dt class="list_dt"> <a href="time.html">Timeline</a> </dt>
+        <dt class="list_dt"> <a href="gbook.html">Comments</a> </dt>
+        <dt class="list_dt"> <a href="about.html">About Me</a> </dt>
+      </dl>
+    </div>
+    <!--mnav end-->
+
+
+  </header>
+  <article>
+    <!--banner begin-->
+    <div class="picsbox">
+      <div class="banner">
+        <div id="banner" class="fader">
+          <li class="slide"><a href="https://www.ucdavis.edu/" target="_blank"><img src="static/images/banner01.jpg"><span class="imginfo">DavisBlog</span></a></li>
+          <li class="slide"><a href="https://www.ucdavis.edu/" target="_blank"><img src="static/images/banner02.jpg"><span class="imginfo">DavisBlog</span></a></li>
+          <li class="slide"><a href="https://www.ucdavis.edu/" target="_blank"><img src="static/images/banner03.jpg"><span class="imginfo">DavisBlog</span></a></li>
+          <div class="fader_controls">
+            <div class="page prev" data-target="prev">&lsaquo;</div>
+            <div class="page next" data-target="next">&rsaquo;</div>
+            <ul class="pager_list">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--banner end-->
+      <div class="toppic">
+        <li> <i><img src="https://theaggie.org/wp-content/uploads/2021/10/rankings_ca_-scaled.jpg"></i>
+            <h2>Let there be light.</h2>
+
+          </li>
+        <li> <i><img src="https://www.ucdavis.edu/sites/default/files/styles/hero_x_large_2000_x_1125/public/media/images/drone-ambient-first-frame-uc-davis.jpg?h=854a7be2&itok=B5Xz0Ep7"></i>
+            <h2>UC Davis</h2>
+
+           </li>
+      </div>
+    </div>
+    <div class="blank"></div>
+    <!--blogsbox begin-->
+    <div class="blogsbox">
+      <div class="blogs" data-scroll-reveal="enter bottom over 1s">
+        <h3 class="blogtitle"><a href="/RageFu/topics/detail/8" target="_blank">Introduction to DavisBlog </a></h3>
+        <span class="blogpic"><a href="/RageFu/topics/detail/8" title=""><img src="images/toppic01.jpg" alt=""></a></span>
+        <p class="blogtext">A blog website for UC Davis students</p>
+        <div class="bloginfo">
+          <ul>
+            <li class="author">RageFu</a></li>
+            <li class="lmname">Haowei, Fu</a></li>
+            <li class="timer">2022-12-20</li>
+            <li class="view"><span>0</span>Viewers</li>
+            <li class="like">0</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div class="guanzhu" id="follow-us">
+        <h2 class="hometitle">Contact Haowei,Fu</h2>
+        <ul>
+          <li class="sina"><span>Chinese WeChat</span>RageFu</li>
+          <li class="qq"><a href="https://github.com/RageFu2004" target="_blank"><span>GitHub</span>RageFu</a></li>
+          <li class="email"><span>Email</span>fhwfu@ucdavis.edu</li>
+          <li class="wxgzh"><span>Tel</span>+1 530 760 5339</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+  <footer id="footer">
+    <p>Design by <a href='https://github.com/RageFu2004' target="_blank">RageFu</a></p>
+  </footer>
+  <a href="#" class="cd-top">Top</a>
+</body>
+<script>
+    var but3 = document.getElementById('change3')
+    var but4 = document.getElementById('change4')
+    var but5= document.getElementById('change5')
+    var but2 = document.getElementById('change2')
+    var but = document.getElementById('change')
+    var login = document.getElementById('login')
+    var register = document.getElementById('register')
+    var token = window.localStorage.getItem('fublog_token');
+    var username = window.localStorage.getItem('fublog_user');
+    if (token){
+      but3.href = '/'+username+'/topics'
+      but4.href = '/'+username+'/topics?category=Academic'
+      but5.href = '/'+username+'/topics?category=Non-Academic'
+
+      but.href = '/'+username+'/topic/release';
+      but2.href = '/'+username+'/info';
+      login.innerText = 'Welcome! ' + username;
+      login.href ='/'+username +'/info';
+      register.innerText = '';
+      register.href = '';
+    }
+</script>
+
+</html>
