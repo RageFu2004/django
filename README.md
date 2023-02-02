@@ -1,4 +1,4 @@
-# CSDN updated
+# web outlines
 #outline1：http://haoweifu.pythonanywhere.com
 #outline2: http://159.138.40.184  
 Django-fublog backend+frontend open 
